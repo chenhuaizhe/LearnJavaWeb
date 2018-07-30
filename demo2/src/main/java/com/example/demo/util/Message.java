@@ -1,11 +1,7 @@
 package com.example.demo.util;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-/**
- * 
- * @author hzy
- *
- */
+
 public class Message {
 	private int retCode;
 	private String msg;
@@ -19,8 +15,6 @@ public class Message {
 		return retCode;
 	}
 	
-	
-
 	public void setRetCode(int retCode) {
 		this.retCode = retCode;
 	}
@@ -41,7 +35,6 @@ public class Message {
 	 * @return
 	 */
     public String toJson() {
-//        Gson gson = new Gson();
     	Gson gson = new GsonBuilder()
 		   .setDateFormat("yyyy-MM-dd HH:mm:ss").create();
         return gson.toJson(this);

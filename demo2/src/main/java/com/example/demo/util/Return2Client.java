@@ -8,7 +8,6 @@ public class Return2Client extends Message{
 
 	private Object content;
 	
-	
 
 	public Object getContent() {
 		return content;
